@@ -1,46 +1,17 @@
-# IDEAL Lab Project GitHub Template
-This template provides a basic file structure for organizing and recording project workflows for various lab research projects.
-After cloning a version of this template, your local file system may look something like the following (modified from [JuliaDynamics' Dr. Watson](https://juliadynamics.github.io/DrWatson.jl/dev/) so you may need to modify slightly for Python or other languages as per your specific needs):
-```
-│projectdir          <- Project's main folder. It is initialized as a Git
-│                       repository with a reasonable .gitignore file.
-│
-├── _notes           <- WIP scripts, code, notes, comments,
-│   |                   to-dos and anything in an alpha state.
-│   └── tmp          <- Temporary data folder.
-│
-├── data             <- **Immutable and add-only for project data**
-|                       Depending on project this may import repo submodules
-│
-├── results          <- For outputs needed for reports or papers.
-│   |                   
-│   └── plots        <- Self explanatory
-│   └── videos       <- Can be actual video streams or just gifs/animation files
-│   └── tables       <- If helpful to store for papers.
-|
-├── notebooks        <- Jupyter, Weave or any other mixed media notebooks.
-|                       Can reference files in src or utils.
-│
-├── papers           <- Scientific papers resulting from the project.
-|   |                   This will load overleaf links as git submodules.
-│   └── reports      <- May also link to report files for sponsor.
-|                       
-├── scripts          <- Various scripts, e.g. simulations, plotting, analysis,
-│                       The scripts use the `src` folder for their base code.
-│
-├── src              <- Source code for use in this project. Contains functions,
-│                       structures and modules that are used throughout
-│                       the project and in multiple scripts.
-|
-├── utils            <- Utility functions brought in from other repos.
-|                       May be implemented as submodules if needed (e.g. plotting).
-│
-├── README.md        <- Optional top-level README for anyone using this project.
-├── .gitignore       <- may ignore _notes, data, plots, videos, notebooks,
-|                       and latex-compilation related files, etc. as needed
-│
-├── Manifest.toml    <- Contains full list of exact package versions used currently.
-└── Project.toml     <- Main project file, allows activation and installation.
-                        Above files can be customized depending on your language
-                        Key idea is to make it easy to activate the virtual env
-```
+# Dataset for AIAA 2024: Optimizing Diffusion to Diffuse Optimal Designs
+Provides the dataset mentioned in the paper. The dataset is stored in .pkl files in the `data` folder. To be updated with more processed data and examples as needed. Contact cdiniz@umd.edu for any questions.
+
+Please cite the paper if you use this dataset in your research:
+
+Diniz, Cashen, and Mark Fuge. "Optimizing Diffusion to Diffuse Optimal Designs." AIAA SCITECH 2024 Forum. 2024.
+
+@inproceedings{diniz2024optimizing,
+  title={Optimizing Diffusion to Diffuse Optimal Designs},
+  author={Diniz, Cashen and Fuge, Mark},
+  booktitle={AIAA SCITECH 2024 Forum},
+  pages={2013},
+  year={2024}
+}
+
+## Abstract
+Generative models offer the possibility to accelerate and potentially substitute parts of the often expensive traditional design optimization process. However, current implementations of these models often ignore aspects of the optimization process that, among other benefits, could be used to improve model accuracy and design feasibility. We implement a latent denoising diffusion model (DDM) capable of generating airfoil geometries conditioned on flow parameters and an area constraint. Additionally, we create a novel, diverse dataset of optimized airfoil designs that better reflects a realistic design space than has been done in previous work. The model is applied to this dataset, and key metrics are assessed both statistically and with an open-source computational fluid dynamics (CFD) solver to determine the performance of the generated designs. Our final contribution is the implementation of a diffusion model with a variance schedule based on the statistical changes in design variables along the aggregate optimization trajectories of our data. We find this model produces better-performing airfoils and improves design feasibility. We acknowledge that the verification and reasons behind this improvement remain unclear, but hope to present an initial step towards further investigations of optimization-informed generative models.
