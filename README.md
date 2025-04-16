@@ -3,7 +3,7 @@ Now on Hugging Face! : https://huggingface.co/datasets/IDEALLab/airfoil_2d_v0
 
 Provides the RANS-optimized airfoil dataset mentioned in the paper. The dataset is stored in .pkl files in the `data` folder. Alternatively, you can use only the optimized airfoils and associated performance values in the 'data\optimized_data' folder (read the readme in that folder for more information).To be updated with more processed data and examples as needed. 
 
-Contact cdiniz@umd.edu for any questions.
+Contact cdiniz@ethz.ch for any questions.
 
 Please cite the paper if you use this dataset in your research:
 
