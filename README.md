@@ -1,6 +1,8 @@
 # Dataset for AIAA 2024: Optimizing Diffusion to Diffuse Optimal Designs
 Now on Hugging Face! : https://huggingface.co/datasets/IDEALLab/airfoil_2d_v0
 
+(although the additional intermediate airfoils are only available here for now)
+
 Provides the RANS-optimized airfoil dataset mentioned in the paper. The dataset is stored in .pkl files in the `data` folder. Alternatively, you can use only the optimized airfoils and associated performance values in the 'data\optimized_data' folder (read the readme in that folder for more information).To be updated with more processed data and examples as needed. 
 
 Contact cdiniz@ethz.ch for any questions.
